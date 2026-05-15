@@ -7,7 +7,12 @@ public class BankAccount {
    public BankAccount() {
       balance = 0;
    }
-
+   /* 
+   deposit() will deposit money into the account by adding
+   the funds.
+   withdrawal() will pull or subtract money from the account 
+   balance. Overdraft is handled in subclass CheckingAccount.
+    */
    public void deposit(double amount) {
       this.balance += amount;
    }
@@ -43,7 +48,12 @@ public class BankAccount {
    public double getBalance() {
       return this.balance;
    }
-
+   /*
+   accountSummary() uses formatted output (printf) to create a clean,
+   aligned display of account information. This is to improve the readability
+   in the console and simulates how most banking systems present thier 
+   structured account data
+    */
    public void accountSummary() {
       System.out.println("\n");
       System.out.printf("     ***Account Summary***\n");
