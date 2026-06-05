@@ -87,6 +87,11 @@ public class BankBalanceGUI extends JFrame implements ActionListener{
                 return;
             }
         }
+        
+        if (amount <= 0) {
+            JOptionPane.showMessageDialog(this, "Please enter a positive amount.");
+            return;
+        }
          
         // Deposit Button with a confirmation message
         if(e.getSource() == depositButton) {
