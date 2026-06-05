@@ -76,7 +76,7 @@ public class BankBalanceGUI extends JFrame implements ActionListener{
 
         // Get amount entered by user
         double amount = 0;
-        
+
         // Catch errors
         try {
             amount = Double.parseDouble(amountField.getText());
@@ -86,6 +86,10 @@ public class BankBalanceGUI extends JFrame implements ActionListener{
                 JOptionPane.showMessageDialog(this, "Please enter a valid number.");
                 return;
             }
+        }
+        if (amount <= 0) {
+            JOptionPane.showMessageDialog(this, "Please enter a positive amount.");
+            return;
         }
          
         // Deposit Button with a confirmation message
