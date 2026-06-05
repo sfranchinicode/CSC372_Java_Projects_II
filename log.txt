@@ -1,0 +1,1 @@
+Here I am writing a log to be saved to log.txt!

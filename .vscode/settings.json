@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "Module_1",
+        "Module_2",
+        "Module_3"
+    ],
+    "java.project.referencedLibraries": [],
+    "java.project.outputPath": "Java_Projects _Programming_II/Module_1",
+    "java.dependency.packagePresentation": "flat",
+    "java.project.explorer.showNonJavaResources": true
+}

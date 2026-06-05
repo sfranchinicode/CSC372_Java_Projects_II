@@ -1,0 +1,67 @@
+//Reused from Module 1
+
+public class BankAccount {
+   private String firstName;
+   private String lastName;
+   private int accountID;
+   protected double balance;
+
+   public BankAccount() {
+      balance = 0;
+   }
+   /* 
+   deposit() will deposit money into the account by adding
+   the funds.
+   withdrawal() will pull or subtract money from the account 
+   balance. Overdraft is handled in subclass CheckingAccount.
+    */
+   public void deposit(double amount) {
+      this.balance += amount;
+   }
+
+   public void withdrawal(double amount) {
+      this.balance -= amount;
+   }
+
+   public void setFirstName(String firstName) {
+      this.firstName = firstName;
+   }
+
+   public void setLastName(String lastName) {
+      this.lastName = lastName;
+   }
+
+   public void setAccountID(int accountID) {
+      this.accountID = accountID;
+   }
+
+   public String getFirstName() {
+      return this.firstName;
+   }
+
+   public String getLastName() {
+      return this.lastName;
+   }
+
+   public int getAccountID() {
+      return this.accountID;
+   }
+
+   public double getBalance() {
+      return this.balance;
+   }
+   /*
+   accountSummary() uses formatted output (printf) to create a clean,
+   aligned display of account information. This is to improve the readability
+   in the console and simulates how most banking systems present thier 
+   structured account data
+    */
+   public void accountSummary() {
+      System.out.println("\n");
+      System.out.printf("     ***Account Summary***\n");
+      System.out.printf("%-15s %15s%n","First & Last Name: ", this.firstName + " " + this.lastName);
+      System.out.printf("%-15s %15d%n", "Account ID:", this.accountID);
+      System.out.printf("%-15s %15s%n", "Balance: $", String.format("%.2f", this.balance));
+   }
+}
+
