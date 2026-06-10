@@ -2,7 +2,9 @@
     "java.project.sourcePaths": [
         "Module_1",
         "Module_2",
-        "Module_3"
+        "Module_3",
+        "Module_4",
+        "Module_5"
     ],
     "java.project.referencedLibraries": [],
     "java.project.outputPath": "Java_Projects _Programming_II/Module_1",
